@@ -69,7 +69,7 @@ function calculateTip(tipPercent, totalBill){
  *  prompt the user for the bill total and a percentage they would like to tip,
  *  then display the dollar amount they should tip
  */
-alert(calculateTip(prompt(`What is the tip percentage?`), prompt(`What is the cost of your bill`)));
+alert(calculateTip(Number(prompt(`What is the tip percentage? (Decimal)`)), Number(prompt(`What is the cost of your bill`))));
 /**
  * TODO:
  *  Create a function named `applyDiscount`. This function should accept a price
