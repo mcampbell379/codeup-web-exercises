@@ -33,19 +33,19 @@ function analyzeColor(color){
 
     switch (color){
         case "red":
-            console.log(`Blood is red.`);
+            alert(`Blood is red.`);
             break;
         case "yellow":
-            console.log(`The sun is yellow.`);
+            alert(`The sun is yellow.`);
             break;
         case "green":
-            console.log(`Grass is green.`);
+            alert(`Grass is green.`);
             break;
         case "blue":
-            console.log(`The sky is blue.`);
+            alert(`The sky is blue.`);
             break;
         default:
-            console.log(`I don't know anything that is ${color}`)
+            alert(`I don't know anything that is ${color}`)
     }
 }
 analyzeColor(`red`);
@@ -103,15 +103,15 @@ function calculateTotal (luckyNum, totalSum){
             return discountTotal;
         } else if (luckyNum === 2) {
             discountTotal = totalSum - (.25 * totalSum);
-            return discountTotal
+            return discountTotal;
         } else if (luckyNum === 3) {
             discountTotal = totalSum - (.35 * totalSum);
-            return discountTotal
+            return discountTotal;
         } else if (luckyNum === 4) {
             discountTotal = totalSum - (.5 * totalSum);
-            return discountTotal
+            return discountTotal;
         } else
-            return `$0`
+            return `0`
 }
 
 function runProgram (){
@@ -151,3 +151,17 @@ runProgram();
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+function evenOrOdd (num){
+    if(num % 2 === 0){
+        alert(`This number is even.`);
+    }  else {
+        alert(`This number is odd`);
+    }
+
+    if(num > 0){
+        alert(`That number is positive`)
+    }
+
+    return
+}
