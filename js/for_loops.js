@@ -21,9 +21,10 @@ for(let i = 1; i <= 10; i++){
     }
 }
 
-// for(let i = 0; i < 10; i++){
-//     console.log(i.toString() * i);
-// }
+for(let i = 0; i < 10; i++){
+    console.log(`${i}`.repeat(i));
+}
+
 console.log(`\n`);
 
 
