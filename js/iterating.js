@@ -6,7 +6,7 @@
      * Create an array of 4 people's names and store it in a variable called
      * 'names'.
      */
-    let names = [`Christine`, `Angie`, `Billie`, `Harvest`];
+    let names = [`Michael`, `Sock`, `Cesar`, `Sky`];
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
