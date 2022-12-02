@@ -12,7 +12,9 @@
      * Create a log statement that will log the number of elements in the names
      * array.
      */
+
     console.log(names.length);
+
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
