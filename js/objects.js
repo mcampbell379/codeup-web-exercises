@@ -57,7 +57,7 @@
     ];
 
     for (let i = 0; i < shoppers.length; i++) {
-        console.log(`${shoppers[i].name} bought $${shoppers[i].amount} worth of groceries.`)
+        console.log(`\n${shoppers[i].name} bought $${shoppers[i].amount} worth of groceries.`)
         if(shoppers[i].amount >= 200){
             shoppers[i].amount -= (shoppers[i].amount * .12)
         }
