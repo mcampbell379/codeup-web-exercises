@@ -55,11 +55,11 @@
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
-
+    //if shopper spent more than $200, changes shopper amount to include discount
     for (let i = 0; i < shoppers.length; i++) {
         console.log(`\n${shoppers[i].name} bought $${shoppers[i].amount} worth of groceries.`)
         if(shoppers[i].amount >= 200){
-            shoppers[i].amount -= (shoppers[i].amount * .12)
+            shoppers[i].amount -= (shoppers[i].amount * .12);
         }
         console.log(`The new discounted price is $${shoppers[i].amount}`)
     }
@@ -116,10 +116,7 @@
      *      ...
      */
     //prints books
-    for (let i = 0; i < books.length; i++) {
-        // console.log(`\nBook #${i + 1}\nTitle: ${books[i].title}\nAuthor: ${books[i].author.firstName} ${books[i].author.lastName}`);
-        showBookInfo(books, i);
-    }
+
 
     /**
      * Bonus:
@@ -131,15 +128,20 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-
+    // returns a book object with title and author property
     function createBook (title, authorName){
         return {
             title: title.toString(),
             authorName: authorName.toString()
         };
     }
-
+    //called inside a loop to print every book object in the array
     function showBookInfo (books, i){
         console.log(`\nBook #${i + 1}\nTitle: ${books[i].title}\nAuthor: ${books[i].authorName}`);
+    }
+
+    for (let i = 0; i < books.length; i++) {
+        // console.log(`\nBook #${i + 1}\nTitle: ${books[i].title}\nAuthor: ${books[i].author.firstName} ${books[i].author.lastName}`);
+        showBookInfo(books, i);
     }
 })();
