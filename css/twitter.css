@@ -27,11 +27,19 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+.nav-item {
+    /* nav links dont use float or pos. use display with inline-block instead */
+    display: inline-block;
+    padding: 1.5em;
 }
 .nav-link {
     color: var(--main-link-color);
@@ -43,6 +51,62 @@ a {
 }
 .profile {
     background: var(--light-bg);
+    height: 80px;
+}
+.profile-header {
+    /* position of the pfp container? */
+    float: left;
+}
+.profile-form {
+    float: right;
+    height: 80px;
+    line-height: 80px;
+}
+.profile-image {
+    position: relative;
+    top: -26px;
+    left: 5px;
+}
+.container {
+    margin-top: 4em;
+}
+.profile-details {
+    float: left;
+    width: calc(25% - 1em);
+    margin: 0 .5em;
+}
+.timeline {
+    float: left;
+    width: calc(50% - 1em);
+    margin: 0 .5em;
+}
+.who-to-follow {
+    float: left;
+    width: calc(25% - 1em);
+    margin: 0 .5em;
+}
+.media {
+    width: 100%;
+    background-color: var(--light-bg);
+    border: 1px var(--separator-color);
+    padding: .5em;
+    overflow: auto;
+}
+.media-image {
+    float: left;
+    width: 50px;
+    margin-top: 1.33em;
+}
+.media-body {
+    float: top;
+    width: calc(100% - 50px);
+}
+.profile-items {
+    list-style: none;
+    padding: 0;
+}
+.profile-entry {
+    margin: .5em;
 }
 .btn {
     border: 1px solid var(--main-link-color);
