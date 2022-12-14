@@ -5,38 +5,28 @@ body, html {
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
-.message-info {
+.message {
     margin: 10px 10px auto;
     padding: 10px;
-    border-color: gray;
+    border-color: grey;
     border-width: thick;
     border-radius: 10px;
+}
+.message-info {
     background-color: cornflowerblue;
     color: lightskyblue;
 }
 .message-success {
-    margin: 10px 10px auto;
-    padding: 10px;
-    border-color: mediumspringgreen;
-    border-width: thick;
     border-radius: 10px;
     background-color: lightgreen;
     color: green;
 }
 .message-warning {
-    margin: 10px 10px auto;
-    padding: 10px;
-    border-color: mediumspringgreen;
-    border-width: thick;
     border-radius: 10px;
     background-color: goldenrod;
     color: yellow;
 }
 .message-error {
-    margin: 10px 10px auto;
-    padding: 10px;
-    border-color: mistyrose;
-    border-width: thick;
     border-radius: 10px;
     background-color: palevioletred;
     color: darkred;
