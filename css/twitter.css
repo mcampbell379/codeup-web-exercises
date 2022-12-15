@@ -63,8 +63,8 @@ a {
     line-height: 80px;
 }
 .profile-image {
-    position: relative;
-    top: -26px;
+    position: absolute;
+    top: 240px;
     left: 5px;
 }
 .container {
