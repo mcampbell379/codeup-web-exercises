@@ -42,7 +42,6 @@ h2, h3 {
 section {
     /* enter needed declarations here */
     display: flex;
-    padding: 10px;
 }
 
 section:nth-of-type(1) {
@@ -56,7 +55,7 @@ section:nth-of-type(1) {
 }
 section:nth-of-type(1) div:last-child {
     /* enter needed declarations here */
-    margin-bottom: 30px;
+    align-self: flex-start;
 }
 
 .purple-box {
@@ -67,13 +66,13 @@ section:nth-of-type(1) div:last-child {
 
 .purple-box:nth-of-type(1) {
     /* enter needed declarations here */
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .purple-box:nth-of-type(2) {
     /* enter needed declarations here */
 
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 .blue-box {
@@ -84,12 +83,13 @@ section:nth-of-type(1) div:last-child {
 
 section:nth-of-type(3) {
     /* enter needed declarations here */
+    align-items: center;
+    justify-content: flex-end;
 }
 
 section:nth-of-type(3) h3 {
     /* enter needed declarations here */
-    align-self: center;
-    margin-right: 5.5em;
+   flex-grow: 1;
 }
 
 .orange-circle {
