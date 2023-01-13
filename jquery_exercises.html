@@ -5,18 +5,40 @@
     <title>jquery exercise</title>
 </head>
 <body>
+    <h1 id="my-text1" class="codeup">howdy</h1>
 
+    <h1 id="my-text2" class="codeup">howdy partner</h1>
 
-<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <p id="my-text3" class="">what in tarnation</p>
+
+    <p id="codeup" class="">#id of 'codeup'</p>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
 <script>
     "use strict";
 
-    (function () {
-        $(document).ready(function() {
-            alert("dom finished loading according to jquery");
-        });
-    })();
+    // $(document).ready(function() {
+    //     alert("dom finished loading according to jquery");
+    // });
+
+    // alert($(`#my-text1`).html());
+    // alert($(`#my-text2`).html());
+
+    $(`.codeup`).css("border", "inset 1px red");
+
+    $("li").css("font-size", "20px");
+
+    $("h1, p, li").css("background-color", "yellow");
+
+    alert($(`h1`).html());
+
 </script>
 </body>
 </html>
