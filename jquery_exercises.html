@@ -5,18 +5,29 @@
     <title>jquery exercise</title>
 </head>
 <body>
-    <h1 id="my-text1" class="codeup">howdy</h1>
+<!--    <h1 id="my-text1" class="codeup">howdy</h1>-->
 
-    <h1 id="my-text2" class="codeup">howdy partner</h1>
+<!--    <h1 id="my-text2" class="codeup">howdy partner</h1>-->
 
-    <p id="my-text3" class="">what in tarnation</p>
+<!--    <p id="my-text3" class="">what in tarnation</p>-->
 
-    <p id="codeup" class="">#id of 'codeup'</p>
+<!--    <p id="codeup" class="">#id of 'codeup'</p>-->
+
+<!--    <ul>-->
+<!--        <li>1</li>-->
+<!--        <li>2</li>-->
+<!--        <li>3</li>-->
+<!--    </ul>-->
+
+    <h1 id="heehoo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, obcaecati.</h1>
+
+    <p class="my-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at cum dolores, expedita fugit iusto maxime nemo nihil, omnis perspiciatis possimus quis quod rerum, tempore voluptate. Blanditiis ea, excepturi. Amet assumenda, autem commodi consequatur doloremque eius ex, excepturi magnam modi nisi quae quibusdam quisquam sapiente, sequi soluta unde veniam! At.</p>
+    <p class="my-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque consectetur debitis deleniti, dolor dolores eos maxime natus nihil, nobis non numquam quaerat quas quos suscipit temporibus voluptatum. Assumenda consequatur et illo nam neque, quam quas quisquam unde veniam. Aperiam atque beatae iste modi neque non officiis repudiandae. Quis, reiciendis.</p>
 
     <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li class="my-li">waa waa</li>
+        <li class="my-li">wee waa</li>
+        <li class="my-li">wee woo</li>
     </ul>
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
@@ -35,14 +46,27 @@
     alert($(`#my-text2`).html());
     */
 
-    $(`.codeup`).css("border", "inset 1px red");
+    // $(`.codeup`).css("border", "inset 1px red");
+    //
+    // $("li").css("font-size", "20px");
+    //
+    // $("h1, p, li").css("background-color", "yellow");
+    //
+    // alert($("h1").html());
 
-    $("li").css("font-size", "20px");
+    $("#heehoo").click(function () {
+        $(this).css("background-color", "purple");
+    });
 
-    $("h1, p, li").css("background-color", "yellow");
+    $(".my-para").dblclick(function () {
+        $(this).css("font-size", "18px");
+    });
 
-    alert($("h1").html());
-
+    $(".my-li").hover(function () {
+        $(this).css("color", "red");
+    }, function (){
+        $(this).css("color", "black");
+    });
 </script>
 </body>
 </html>
