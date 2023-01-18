@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery faq</title>
+
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Lorem</dt>
+        <dd class="my-def invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci aliquam architecto at beatae blanditiis culpa cum cupiditate delectus dignissimos distinctio eaque eligendi exercitationem facilis incidunt inventore magni maiores molestiae molestias nesciunt nihil non nulla numquam omnis quae qui quo quos ratione repellendus repudiandae rerum similique, sunt temporibus voluptatum?</dd>
+        <dt>Lorem</dt>
+        <dd class="my-def invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci aliquam architecto at beatae blanditiis culpa cum cupiditate delectus dignissimos distinctio eaque eligendi exercitationem facilis incidunt inventore magni maiores molestiae molestias nesciunt nihil non nulla numquam omnis quae qui quo quos ratione repellendus repudiandae rerum similique, sunt temporibus voluptatum?</dd>
+        <dt>Lorem</dt>
+        <dd class="my-def invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci aliquam architecto at beatae blanditiis culpa cum cupiditate delectus dignissimos distinctio eaque eligendi exercitationem facilis incidunt inventore magni maiores molestiae molestias nesciunt nihil non nulla numquam omnis quae qui quo quos ratione repellendus repudiandae rerum similique, sunt temporibus voluptatum?</dd>
+        <dt>Lorem</dt>
+        <dd class="my-def invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci aliquam architecto at beatae blanditiis culpa cum cupiditate delectus dignissimos distinctio eaque eligendi exercitationem facilis incidunt inventore magni maiores molestiae molestias nesciunt nihil non nulla numquam omnis quae qui quo quos ratione repellendus repudiandae rerum similique, sunt temporibus voluptatum?</dd>
+        <dt>Lorem</dt>
+        <dd class="my-def invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci aliquam architecto at beatae blanditiis culpa cum cupiditate delectus dignissimos distinctio eaque eligendi exercitationem facilis incidunt inventore magni maiores molestiae molestias nesciunt nihil non nulla numquam omnis quae qui quo quos ratione repellendus repudiandae rerum similique, sunt temporibus voluptatum?</dd>
+        <dt>Lorem</dt>
+        <dd class="my-def invisible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci aliquam architecto at beatae blanditiis culpa cum cupiditate delectus dignissimos distinctio eaque eligendi exercitationem facilis incidunt inventore magni maiores molestiae molestias nesciunt nihil non nulla numquam omnis quae qui quo quos ratione repellendus repudiandae rerum similique, sunt temporibus voluptatum?</dd>
+    </dl>
+
+    <button id="invis-button">Toggle definitions</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        // DONT INCLUDE THE CLASS OR ID IDENTIFIER IN TOGGLECLASS (#, .)
+        $("#invis-button").click(function (){
+            $(".my-def").toggleClass("invisible");
+        });
+    </script>
+</body>
+</html>
