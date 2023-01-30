@@ -44,6 +44,10 @@ const userEmails = users.map(function(n){
     return n.email;
 });
 
+const totalExp = users.reduce(function (total, user){
+    return total + user.yearsOfExperience;
+}, 0);
+
 const longestEmail = userEmails.reduce(function (currentLongest, n){
     if (n.length > currentLongest.length){
         currentLongest = n;
@@ -58,6 +62,7 @@ const userNames = users.reduce(function (names, n){
 
 console.log(versedInLanguages);
 console.log(userEmails);
+console.log(totalExp / users.length)
 console.log("Longest email belongs to: " + longestEmail);
 console.log("Your instructors are: " + userNames);
 
